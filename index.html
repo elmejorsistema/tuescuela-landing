@@ -1,1 +1,338 @@
-Hola
+<!doctype html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Control académico y administrativo en un solo sistema. Captura de calificaciones por docente e impresión de calificaciones y reportes académicos, además de control de pagos y cobranza." />
+    <meta name="theme-color" content="#6FBF8F" />
+
+    <title>TuEscuela.mx — Control académico y administrativo</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TuEscuela.mx — Control académico y administrativo" />
+    <meta property="og:description" content="Captura de calificaciones por docente, impresión de calificaciones y reportes académicos, y control de pagos para operar tu escuela con orden." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:url" content="https://tuescuela.mx" />
+    <!-- Si luego agregas imagen social: assets/img/og-image.webp -->
+    <!-- <meta property="og:image" content="https://tuescuela.mx/assets/img/og-image.webp" /> -->
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%236FBF8F%22%3E%3Crect%20x%3D%2210%22%20y%3D%2256%22%20width%3D%2220%22%20height%3D%2230%22%20rx%3D%224%22/%3E%3Crect%20x%3D%2236%22%20y%3D%2236%22%20width%3D%2220%22%20height%3D%2250%22%20rx%3D%224%22/%3E%3Crect%20x%3D%2262%22%20y%3D%2216%22%20width%3D%2220%22%20height%3D%2270%22%20rx%3D%224%22/%3E%3C/g%3E%3C/svg%3E" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+<a class="skip-link" href="#lead-form">Saltar al formulario</a>
+
+<header class="header">
+    <div class="container header__inner">
+        <a class="brand" href="/" aria-label="TuEscuela.mx">
+        <span class="brand__logo" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#6FBF8F">
+              <rect x="10" y="56" width="20" height="30" rx="4"/>
+              <rect x="36" y="36" width="20" height="50" rx="4"/>
+              <rect x="62" y="16" width="20" height="70" rx="4"/>
+            </g>
+          </svg>
+        </span>
+            <span class="brand__text">
+          <span class="brand__name">TuEscuela</span><span class="brand__mx">.mx</span>
+        </span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+            <a class="nav__link" href="#benefits">Beneficios</a>
+            <a class="nav__link" href="#features">Funcionalidades</a>
+            <a class="nav__link" href="#video">Video</a>
+            <button class="btn btn--primary btn--sm" data-scroll="#lead-form">Solicitar demo</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero__grid">
+            <div class="hero__content">
+                <div class="pill">
+                    <span class="pill__dot" aria-hidden="true"></span>
+                    Control académico + administrativo
+                </div>
+
+                <h1>Control académico y administrativo en un solo sistema.</h1>
+                <p class="lead">
+                    Organiza alumnos, ciclos y grupos; permite <strong>captura de calificaciones por docente</strong> y
+                    genera <strong>impresión de calificaciones y reportes académicos</strong>.
+                    Además, controla pagos, recibos y morosidad para operar tu escuela con orden.
+                </p>
+
+                <div class="hero__cta">
+                    <button class="btn btn--primary" data-scroll="#lead-form">Solicitar demostración</button>
+                    <button class="btn btn--ghost" data-scroll="#features">Ver funcionalidades</button>
+                </div>
+
+                <div class="trust">
+                    <div class="trust__item">
+                        <span class="trust__kpi">Rápido</span>
+                        <span class="trust__txt">Diseñado para móvil</span>
+                    </div>
+                    <div class="trust__item">
+                        <span class="trust__kpi">Simple</span>
+                        <span class="trust__txt">Sin curva pesada</span>
+                    </div>
+                    <div class="trust__item">
+                        <span class="trust__kpi">Claro</span>
+                        <span class="trust__txt">Reportes listos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__visual" aria-label="Vista previa del sistema">
+                <div class="shot">
+                    <div class="shot__top">
+                        <div class="shot__dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="shot__title">Panel</div>
+                    </div>
+
+                    <div class="shot__body">
+                        <div class="shot__card">
+                            <div class="shot__cardTitle">Control académico</div>
+                            <ul class="shot__list">
+                                <li>Alumnos, grupos y ciclos</li>
+                                <li>Captura de calificaciones por docente</li>
+                                <li>Impresión de calificaciones y reportes</li>
+                            </ul>
+                        </div>
+
+                        <div class="shot__card">
+                            <div class="shot__cardTitle">Control administrativo</div>
+                            <ul class="shot__list">
+                                <li>Pagos por ciclo y conceptos</li>
+                                <li>Recibos y reportes</li>
+                                <li>Control de morosidad</li>
+                            </ul>
+                        </div>
+
+                        <div class="shot__hint">
+                            Sustituiremos esto por capturas reales del sistema (se ve mejor aún).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="benefits" class="section">
+        <div class="container">
+            <div class="section__head">
+                <h2>Dirige mejor tu escuela con información clara.</h2>
+                <p class="muted">
+                    TuEscuela centraliza lo académico y lo administrativo para reducir carga operativa y mejorar el control.
+                </p>
+            </div>
+
+            <div class="grid3">
+                <article class="card">
+                    <h3>Control académico</h3>
+                    <p class="muted">
+                        Alumnos, grupos y ciclos ordenados, con calificaciones listas para captura y consulta.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Docentes con acceso</h3>
+                    <p class="muted">
+                        Los docentes capturan calificaciones de sus grupos directamente en el sistema.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Reportes imprimibles</h3>
+                    <p class="muted">
+                        Impresión de calificaciones y reportes académicos, además de recibos y reportes administrativos.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section section--alt">
+        <div class="container">
+            <div class="section__head">
+                <h2>Lo esencial, bien resuelto.</h2>
+                <p class="muted">
+                    Sin exceso de pantallas: lo necesario para operar con eficiencia.
+                </p>
+            </div>
+
+            <div class="grid2">
+                <article class="feature">
+                    <div class="feature__icon" aria-hidden="true">A</div>
+                    <div>
+                        <h3>Académico</h3>
+                        <ul class="list">
+                            <li>Gestión de alumnos, grupos y ciclos</li>
+                            <li><strong>Captura de calificaciones por docente</strong></li>
+                            <li><strong>Impresión de calificaciones y reportes académicos</strong></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="feature">
+                    <div class="feature__icon" aria-hidden="true">B</div>
+                    <div>
+                        <h3>Administrativo</h3>
+                        <ul class="list">
+                            <li>Pagos por ciclo y conceptos</li>
+                            <li>Recibos y reportes</li>
+                            <li>Control de morosidad</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step__n">1</div>
+                    <div class="step__t">Configura</div>
+                    <div class="step__d muted">Tu escuela y ciclo escolar.</div>
+                </div>
+                <div class="step">
+                    <div class="step__n">2</div>
+                    <div class="step__t">Organiza</div>
+                    <div class="step__d muted">Alumnos, grupos y conceptos.</div>
+                </div>
+                <div class="step">
+                    <div class="step__n">3</div>
+                    <div class="step__t">Opera</div>
+                    <div class="step__d muted">Calificaciones, reportes y pagos.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="section">
+        <div class="container">
+            <div class="section__head">
+                <h2>Video del producto</h2>
+                <p class="muted">Colocaremos aquí el video principal (60–90s). Por ahora queda el contenedor listo.</p>
+            </div>
+
+            <div class="video">
+                <!-- Cuando tengas el video:
+                     Opción 1: YouTube/Vimeo iframe
+                     Opción 2: video self-hosted en assets/video/demo.mp4 (mejor control)
+                -->
+                <div class="video__placeholder">
+                    <div class="video__badge">Próximamente</div>
+                    <div class="video__title">Demo TuEscuela.mx</div>
+                    <div class="video__subtitle muted">Control académico + administrativo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="lead-form" class="section section--alt">
+        <div class="container form__grid">
+            <div>
+                <h2>Solicita una demostración</h2>
+                <p class="muted">
+                    Déjanos tus datos y te contactamos para mostrarte cómo funciona en una escuela real.
+                </p>
+
+                <div class="note">
+                    <strong>Enfoque:</strong> control académico (calificaciones, reportes) y administrativo (pagos, recibos, morosidad).
+                </div>
+
+                <div class="mini-faq">
+                    <details>
+                        <summary>¿Cuánto dura la demo?</summary>
+                        <p class="muted">15–20 minutos, enfocada en tus necesidades.</p>
+                    </details>
+                    <details>
+                        <summary>¿Se puede migrar desde Excel?</summary>
+                        <p class="muted">Sí, se puede guiar la carga inicial según tu formato.</p>
+                    </details>
+                </div>
+            </div>
+
+            <form class="form" id="contactForm" method="POST" novalidate>
+                <!-- TODO: Reemplaza action con tu endpoint de Formspree o tu backend -->
+                <!-- Ejemplo Formspree: https://formspree.io/f/xxxxx -->
+                <input type="hidden" name="_subject" value="Lead TuEscuela.mx — Solicitud de demo" />
+                <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+                <label class="field">
+                    <span class="field__label">Nombre</span>
+                    <input class="field__input" name="name" type="text" placeholder="Tu nombre completo" required minlength="3" />
+                </label>
+
+                <label class="field">
+                    <span class="field__label">Teléfono (WhatsApp)</span>
+                    <input class="field__input" name="phone" type="tel" inputmode="tel" placeholder="Ej. 999 123 4567" required minlength="8" />
+                </label>
+
+                <label class="field">
+                    <span class="field__label">Correo</span>
+                    <input class="field__input" name="email" type="email" placeholder="tucorreo@escuela.mx" required />
+                </label>
+
+                <button class="btn btn--primary btn--block" type="submit" id="submitBtn">
+                    Enviar solicitud
+                </button>
+
+                <p class="form__fine muted">
+                    No compartimos tu información. Te contactamos solo para la demostración.
+                </p>
+
+                <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__brand">
+        <span class="footer__logo" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#6FBF8F">
+              <rect x="10" y="56" width="20" height="30" rx="4"/>
+              <rect x="36" y="36" width="20" height="50" rx="4"/>
+              <rect x="62" y="16" width="20" height="70" rx="4"/>
+            </g>
+          </svg>
+        </span>
+            <span>TuEscuela.mx</span>
+        </div>
+
+        <div class="footer__links">
+            <a href="#lead-form">Solicitar demo</a>
+            <a href="#features">Funcionalidades</a>
+            <a href="#video">Video</a>
+        </div>
+
+        <div class="footer__small muted">
+            © <span id="year"></span> TuEscuela.mx
+        </div>
+    </div>
+</footer>
+
+<!-- Sticky CTA (mobile) -->
+<div class="sticky-cta" role="navigation" aria-label="Acciones rápidas">
+    <button class="btn btn--primary btn--block" data-scroll="#lead-form">Solicitar demo</button>
+</div>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
