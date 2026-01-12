@@ -1,0 +1,51 @@
+name: Deploy TuEscuela Landing (S3 + CloudFront)
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: tuescuela-landing-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      AWS_REGION: us-east-1
+      S3_BUCKET: tuescuela-landing-prod
+      CLOUDFRONT_DISTRIBUTION_ID: E22J7YB0Q3WIQT
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          # IMPORTANTE: aquí va el ARN del role que asumirá GitHub Actions
+          role-to-assume: arn:aws:iam::983223154941:role/GitHubActionTuEscuelaLandingDeploy
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Validate required files
+        run: |
+          test -f index.html
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync . s3://${S3_BUCKET} \
+            --delete \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "README.md"
+
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${CLOUDFRONT_DISTRIBUTION_ID}" \
+            --paths "/*"
