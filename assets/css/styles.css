@@ -99,6 +99,13 @@ strong{color:rgba(233,241,236,.95)}
     cursor:pointer;
     font-weight:700;
     letter-spacing:.2px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
     transition: transform .08s ease, background .15s ease, border-color .15s ease;
 }
 .btn:active{transform: translateY(1px)}
