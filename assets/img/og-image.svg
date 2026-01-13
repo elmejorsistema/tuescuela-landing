@@ -13,7 +13,7 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
 
-  <g transform="translate(140 200)">
+  <g transform="translate(160 210) scale(0.9)">
     <g fill="#6FBF8F">
       <rect x="0" y="140" width="70" height="70" rx="10"/>
       <rect x="90" y="100" width="70" height="110" rx="10"/>
