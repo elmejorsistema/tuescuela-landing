@@ -1,6 +1,8 @@
 :root{
     --brand:#6FBF8F;
     --brand-ink:#0f2a1d;
+    --accent:#F2C94C;
+    --accent-ink:#2c2006;
     --bg:#0b0f0d;
     --card:#0f1512;
     --card2:#0e1311;
@@ -106,6 +108,12 @@ strong{color:rgba(233,241,236,.95)}
     border-color: rgba(111,191,143,.35);
 }
 .btn--primary:hover{filter: brightness(1.02)}
+.btn--accent{
+    background: linear-gradient(180deg, rgba(242,201,76,1), rgba(242,201,76,.85));
+    color: var(--accent-ink);
+    border-color: rgba(242,201,76,.45);
+}
+.btn--accent:hover{filter: brightness(1.02)}
 .btn--ghost{
     background: rgba(233,241,236,.04);
 }
