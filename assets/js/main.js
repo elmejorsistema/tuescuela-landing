@@ -69,7 +69,7 @@
             return;
         }
 
-        if (!ENDPOINT || ENDPOINT.includes('https://api.tuescuela.mx/api/leads')) {
+        if (!ENDPOINT || ENDPOINT.includes('TU_BACKEND_ENDPOINT_AQUI')) {
             setStatus('Falta configurar el endpoint del formulario.', 'err');
             return;
         }
