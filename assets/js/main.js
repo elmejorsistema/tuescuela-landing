@@ -28,7 +28,7 @@
     // TODO: Put your backend endpoint here
     // Example: https://api.tuescuela.mx/api/leads
     const ENDPOINT = 'https://api.tuescuela.mx/api/leads';
-    const LEAD_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXAiOiJsZWFkIiwiaWF0IjoxNzY4NDEyNTgzLCJuYmYiOjE3Njg0MTI1ODN9.yf1mCMNBnHoC7k44XqTJGtPtYgMNdLWWUyih_3IZu0w';
+    const LEAD_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXAiOiJsZWFkIiwiaWF0IjoxNzY4NDE2NDE1LCJuYmYiOjE3Njg0MTY0MTV9.UIrg3EjJBOoZP9iWUVTppzTD3XQUHtIfzH6vTGwv2OY';
 
     const setStatus = (msg, type) => {
         if (!status) return;
