@@ -25,9 +25,10 @@
     const status = qs('#formStatus');
     const submitBtn = qs('#submitBtn');
 
-    // TODO: Put your Formspree endpoint here (or backend endpoint)
-    // Example: https://formspree.io/f/xxxxx
-    const ENDPOINT = 'TU_FORMSPREE_ENDPOINT_AQUI';
+    // TODO: Put your backend endpoint here
+    // Example: https://api.tuescuela.mx/api/leads
+    const ENDPOINT = 'https://api.tuescuela.mx/api/leads';
+    const LEAD_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXAiOiJsZWFkIiwiaWF0IjoxNzY4NDEyNTgzLCJuYmYiOjE3Njg0MTI1ODN9.yf1mCMNBnHoC7k44XqTJGtPtYgMNdLWWUyih_3IZu0w';
 
     const setStatus = (msg, type) => {
         if (!status) return;
@@ -68,8 +69,12 @@
             return;
         }
 
-        if (!ENDPOINT || ENDPOINT.includes('TU_FORMSPREE_ENDPOINT_AQUI')) {
-            setStatus('Falta configurar el endpoint del formulario (Formspree o backend).', 'err');
+        if (!ENDPOINT || ENDPOINT.includes('https://api.tuescuela.mx/api/leads')) {
+            setStatus('Falta configurar el endpoint del formulario.', 'err');
+            return;
+        }
+        if (!LEAD_TOKEN || LEAD_TOKEN.includes('TU_JWT_LEADS_AQUI')) {
+            setStatus('Falta configurar el token del formulario.', 'err');
             return;
         }
 
@@ -81,7 +86,10 @@
 
             const res = await fetch(ENDPOINT, {
                 method: 'POST',
-                headers: { 'Accept': 'application/json' },
+                headers: {
+                    'Accept': 'application/json',
+                    'Authorization': 'Bearer ' + LEAD_TOKEN,
+                },
                 body: formData,
             });
 
