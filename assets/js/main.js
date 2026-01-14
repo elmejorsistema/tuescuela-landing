@@ -58,8 +58,9 @@
             name?.focus();
             return;
         }
-        if (!phone?.value || phone.value.trim().length < 8) {
-            setStatus('Por favor, escribe un teléfono válido.', 'err');
+        const phoneVal = String(phone?.value || '').replace(/\s+/g, '');
+        if (!/^\d{10}$/.test(phoneVal)) {
+            setStatus('Por favor, escribe un teléfono válido de 10 dígitos.', 'err');
             phone?.focus();
             return;
         }
