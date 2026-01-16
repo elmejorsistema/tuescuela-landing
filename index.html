@@ -94,10 +94,8 @@
             <div class="hero__visual" aria-label="Vista previa del sistema">
                 <div class="shot">
                     <div class="shot__top">
-                        <div class="shot__dots" aria-hidden="true">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="shot__title">Panel</div>
+                        <div class="shot__dots" aria-hidden="true"></div>
+                        <div class="shot__title"></div>
                     </div>
 
                     <div class="shot__body">
@@ -119,9 +117,6 @@
                             </ul>
                         </div>
 
-                        <div class="shot__hint">
-                            Sustituiremos esto por capturas reales del sistema (se ve mejor aún).
-                        </div>
                     </div>
                 </div>
             </div>
@@ -232,7 +227,6 @@
         <div class="container">
             <div class="section__head">
                 <h2>Video del producto</h2>
-                <p class="muted">Colocaremos aquí el video principal (60–90s). Por ahora queda el contenedor listo.</p>
             </div>
 
             <div class="video">
@@ -240,7 +234,7 @@
                      Opción 1: YouTube/Vimeo iframe
                      Opción 2: video self-hosted en assets/video/demo.mp4 (mejor control)
                 -->
-                <video class="video__player" controls preload="metadata" playsinline>
+                <video class="video__player" controls preload="metadata" playsinline poster="assets/img/portadaVideo.jpg">
                     <source src="assets/video/Demo.mp4" type="video/mp4" />
                     Tu navegador no soporta video HTML5.
                 </video>
