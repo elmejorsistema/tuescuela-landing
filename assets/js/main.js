@@ -5,7 +5,7 @@
     const yearEl = qs('#year');
     if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-    // Smooth scroll buttons
+    // Smooth scroll buttons (with offset for sticky header/cta)
     document.addEventListener('click', (e) => {
         const btn = e.target.closest('[data-scroll]');
         if (!btn) return;
@@ -16,6 +16,16 @@
 
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        requestAnimationFrame(() => {
+            const header = qs('.header');
+            const sticky = qs('.sticky-cta');
+            const headerH = header ? header.getBoundingClientRect().height : 0;
+            const stickyH = sticky && window.getComputedStyle(sticky).display !== 'none'
+                ? sticky.getBoundingClientRect().height
+                : 0;
+            window.scrollBy({ top: -(headerH + stickyH + 12), left: 0, behavior: 'smooth' });
+        });
     });
 
     // Form submit via fetch (Formspree or your backend)
