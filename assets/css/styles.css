@@ -385,6 +385,12 @@ h1{
     background: rgba(11,15,13,.35);
     box-shadow: var(--shadow);
 }
+.video__player{
+    width:100%;
+    aspect-ratio: 16 / 9;
+    display:block;
+    background:#000;
+}
 .video__placeholder{
     aspect-ratio: 16 / 9;
     display:flex;
