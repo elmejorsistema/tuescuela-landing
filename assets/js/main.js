@@ -19,7 +19,8 @@
         const header = qs('.header');
         const headerH = header ? header.getBoundingClientRect().height : 0;
         const offset = headerH + 12;
-        const top = Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset);
+        const anchor = target.querySelector('h2') || target;
+        const top = Math.max(0, anchor.getBoundingClientRect().top + window.scrollY - offset);
 
         window.scrollTo({ top, left: 0, behavior: 'smooth' });
     });
