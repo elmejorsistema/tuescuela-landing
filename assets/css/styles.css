@@ -115,17 +115,18 @@ strong{color:rgba(233,241,236,.95)}
     border-color: rgba(111,191,143,.35);
 }
 .btn--primary:hover{filter: brightness(1.02)}
-.btn--accent{
-    background: linear-gradient(180deg, rgba(242,201,76,1), rgba(242,201,76,.85));
-    color: var(--accent-ink);
-    border-color: rgba(242,201,76,.45);
+.btn--muted{
+    background: rgba(233,241,236,.06);
+    color: rgba(233,241,236,.80);
+    border-color: rgba(233,241,236,.20);
 }
-.btn--accent:hover{filter: brightness(1.02)}
+.btn--muted:hover{filter: brightness(1.02)}
 .btn--ghost{
     background: rgba(233,241,236,.04);
 }
 .btn--block{width:100%}
 .btn--sm{padding:10px 12px; border-radius:12px; font-size:14px}
+.btn--xs{padding:8px 10px; border-radius:10px; font-size:13px}
 
 .muted{color:var(--muted)}
 
