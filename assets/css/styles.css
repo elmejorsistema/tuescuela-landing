@@ -518,6 +518,27 @@ details p{margin:10px 0 0}
     .sticky-cta{display:none}
 }
 
+/* WhatsApp floating button */
+.wa-fab{
+    position: fixed;
+    right: 16px;
+    bottom: 86px;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: #25D366;
+    color: #0b0f0d;
+    box-shadow: var(--shadow);
+    z-index: 61;
+}
+.wa-fab:hover{filter: brightness(1.02)}
+@media (min-width: 900px){
+    .wa-fab{bottom: 24px}
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce){
     *{scroll-behavior:auto !important; transition:none !important}
