@@ -309,7 +309,7 @@ h1{
 @media (max-width: 899px){
     .grid4{grid-template-columns: 1fr}
     .card--photo .card__photoBox{
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 16 / 9;
     }
 }
 .card{
@@ -533,12 +533,12 @@ details p{margin:10px 0 0}
 
 /* Photo card in benefits */
 .card--photo{
-    padding: 12px;
+    padding: 16px;
 }
 .card--photo .card__photoBox{
     border-radius: 16px;
     overflow:hidden;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 3;
     width: 100%;
     border: 1px solid var(--line);
     background: rgba(11,15,13,.35);
