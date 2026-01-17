@@ -306,6 +306,10 @@ h1{
     .grid3{grid-template-columns: repeat(3, 1fr)}
     .grid4{grid-template-columns: repeat(4, 1fr)}
 }
+@media (max-width: 899px){
+    .grid4{grid-template-columns: 1fr}
+    .card--photo .card__photoBox{aspect-ratio: 16 / 9}
+}
 .card{
     border:1px solid var(--line);
     border-radius: var(--r);
