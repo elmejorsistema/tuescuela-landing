@@ -309,7 +309,7 @@ h1{
 @media (max-width: 899px){
     .grid4{grid-template-columns: 1fr}
     .card--photo .card__photoBox{
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 3 / 1;
     }
 }
 .card{
