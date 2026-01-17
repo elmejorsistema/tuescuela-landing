@@ -409,12 +409,16 @@ h1{
 .video__subtitle{font-size: 14px}
 
 /* Form */
-.form__grid{
-    display:grid;
-    gap:18px;
+.form__wrap{
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
 }
-@media (min-width: 980px){
-    .form__grid{grid-template-columns: 1fr 1fr; align-items:start; gap:22px}
+.form__wrap h2{
+    margin: 0 0 14px;
+}
+.form__wrap .form{
+    text-align: left;
 }
 .note{
     margin-top: 14px;
