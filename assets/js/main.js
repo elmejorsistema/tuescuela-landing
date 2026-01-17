@@ -17,12 +17,8 @@
         e.preventDefault();
 
         const header = qs('.header');
-        const sticky = qs('.sticky-cta');
         const headerH = header ? header.getBoundingClientRect().height : 0;
-        const stickyH = sticky && window.getComputedStyle(sticky).display !== 'none'
-            ? sticky.getBoundingClientRect().height
-            : 0;
-        const offset = headerH + stickyH + 12;
+        const offset = headerH + 12;
         const top = Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset);
 
         window.scrollTo({ top, left: 0, behavior: 'smooth' });
